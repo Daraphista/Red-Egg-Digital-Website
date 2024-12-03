@@ -47,7 +47,7 @@
     font-style: bold;
     font-weight: 700;
     font-display: swap;
-    src: url("assets/fonts/Batangas-Bold.ttf") format("ttf");
+    src: url("/assets/fonts/Batangas-Bold.ttf") format("ttf");
   }
 
   /* dm-sans-regular - latin */

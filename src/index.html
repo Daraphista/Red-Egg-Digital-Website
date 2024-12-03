@@ -76,7 +76,7 @@ eleventyNavigation:
   {# ===================================================================== #}
   {#                              Hero Section                             #}
   {# ===================================================================== #}
-  <section class="px-gutter py-section-default relative text-light mb-10 lg:mb-0">
+  <section class="px-gutter py-section-default relative text-light">
     <div class="max-w-container-default grid lg:grid-cols-2 gap-8 mx-auto relative z-10">
 
       {# Content #}
@@ -103,7 +103,7 @@ eleventyNavigation:
       </div>
 
       {# Image #}
-      <div class="-mb-16 drop-shadow-lg">
+      <div class="drop-shadow-lg -mb-10">
         <picture class="flex justify-center">
           <source media="(min-width: 601px)" srcset="/assets/images/home/hero-mockup.png">
           <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/home/hero-mockup.png" alt="Mockup" width="541" height="378">
@@ -121,6 +121,8 @@ eleventyNavigation:
       {# Overlay #}
       <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-primary to-primary/85"></div>
     </div>
+
+    <div class="absolute bg-light inset-x-0 h-14 bottom-0 lg:hidden"></div>
   </section>
 
   {# ===================================================================== #}

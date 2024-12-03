@@ -76,7 +76,7 @@ eleventyNavigation:
   {# ===================================================================== #}
   {#                              Hero Section                             #}
   {# ===================================================================== #}
-  <section class="px-gutter py-section-default relative text-light mb-10">
+  <section class="px-gutter py-section-default relative text-light mb-10 lg:mb-0">
     <div class="max-w-container-default grid lg:grid-cols-2 gap-8 mx-auto relative z-10">
 
       {# Content #}
@@ -86,16 +86,26 @@ eleventyNavigation:
         </h1>
         <p class="">We are the go-to digital marketers for small and medium-sized law firms looking to earn trust and establish authority without the hassle of overspending on advertisements. All done with superb Websites and SEO.</p>
 
-        <div class="flex gap-4">
-          <div>More Traffic</div>
-          <div>Better Prospect Quality</div>
-          <div>More Clients</div>
+        <div class="flex flex-col gap-4 md:flex-row">
+          <div class="flex items-center gap-2 font-heading text-sm">
+            <picture><img src="assets/svgs/check-light.svg" aria-hidden="true" loading="lazy" decoding="async"></picture>
+            More Traffic
+          </div>
+          <div class="flex items-center gap-2 font-heading text-sm">
+            <picture><img src="assets/svgs/check-light.svg" aria-hidden="true" loading="lazy" decoding="async"></picture>
+            Better Prospect Quality
+          </div>
+          <div class="flex items-center gap-2 font-heading text-sm">
+            <picture><img src="assets/svgs/check-light.svg" aria-hidden="true" loading="lazy" decoding="async"></picture>
+            More Clients
+          </div>
         </div>
       </div>
 
       {# Image #}
       <div class="-mb-16 drop-shadow-lg">
-        <picture>
+        <picture class="flex justify-center">
+          <source media="(min-width: 601px)" srcset="/assets/images/home/hero-mockup.png">
           <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/home/hero-mockup.png" alt="Mockup" width="541" height="378">
         </picture>
       </div>
@@ -105,7 +115,7 @@ eleventyNavigation:
     {# Background #}
     <div class="absolute inset-0 bg-primary">
       <picture class="w-full h-full overflow-hidden">
-        <source media="(min-width: 601px)" srcset="/assets/images/hero-background-image.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/home/hero-background-image.webp">
         <img class="absolute inset-0 w-full h-full object-cover" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/home/hero-background-image.webp" alt="Red Egg Digital" width="2560" height="1440">
       </picture>
       {# Overlay #}

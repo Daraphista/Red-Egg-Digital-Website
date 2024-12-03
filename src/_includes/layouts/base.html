@@ -87,25 +87,8 @@
     {% include "components/header.html" %}
 
     <main id="main" class="font-body">
-      <div class="popup-form-container px-gutter flex fixed inset-0 bg-dark/95 z-50 justify-center items-center">
-        <form class="popup-form bg-white w-full max-w-xl flex flex-col gap-2 rounded-xl p-6" action="https://formsubmit.co/angelo.raphael.personal@gmail.com" method="POST">
-          <h2 class="text-h2">Get in touch</h3>
-          <label class="flex flex-col gap-1 w-full">
-            <span class="font-bold lg:text-xl">Name</span>
-            <input class="border full border-dark p-2 md:p-3 rounded-lg bg-white" placeholder="Name" type="text"></label>
-          <label class="flex flex-col gap-1 w-full">
-            <span class="font-bold lg:text-xl">Email</span>
-            <input class="border full border-dark p-2 md:p-3 rounded-lg bg-white" placeholder="Email" type="email"></label>
-          <label class="flex flex-col gap-1 w-full">
-            <span class="font-bold lg:text-xl">Phone</span>
-            <input class="border full border-dark p-2 md:p-3 rounded-lg bg-white" placeholder="Phone" type="tel"></label>
-          <label class="flex flex-col gap-1 w-full">
-            <span class="font-bold lg:text-xl">Message</span>
-            <textarea class="border lg:h-40 full border-dark p-2 md:p-3 rounded-lg bg-white" placeholder="Message" type="input"></textarea>
-          </label>
-          <button class="button border border-primary mt-4" type="submit">submit</button>
-        </form>
-      </div>
+      {% include "components/popup-form.html" %}
+
       {% block body %}{% endblock %}
     </main>
 

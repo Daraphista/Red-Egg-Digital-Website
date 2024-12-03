@@ -334,7 +334,7 @@ eleventyNavigation:
   {#                                 Pricing                               #}
   {# ===================================================================== #}
 
-  <section class="px-gutter py-section-default bg-primary text-light">
+  <section class="px-gutter py-section-default bg-light text-dark">
     <div class="max-w-container-default mx-auto flex flex-col gap-y-6 gap-x-16">
 
       <div class="flex flex-col gap-4">
@@ -348,29 +348,45 @@ eleventyNavigation:
       <div class="grid lg:grid-cols-3 gap-4">
 
         {# ===== Basic Plan ===== #}
-        <div class="p-4 bg-dark flex flex-col">
+        <div class="p-8 bg-dark text-light flex flex-col rounded-xl">
           <h3 class="text-h3 text-2xl">Basic Plan</h3>
-          <ul>
-            <li>Design and Development</li>
-            <li>Hosting</li>
-            <li>5 Primary Pages</li>
+          <p class="text-sm">Everything you need to start building your digital presence. Perfect for solo and small firms.</p>
+
+          <ul class="mt-4">
+            <li class="flex items-center gap-2">
+              <picture><img src="assets/svgs/check-light.svg" aria-hidden="true"></picture>
+              <span>Design and Development</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <picture><img src="assets/svgs/check-light.svg" aria-hidden="true"></picture>
+              <span>Hosting</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <picture><img src="assets/svgs/check-light.svg" aria-hidden="true"></picture>
+              <span>5 Primary Pages</span>
+            </li>
           </ul>
 
-          <div class="mt-4">
-            <div>
-              <strong>Bonus</strong>: Evergreen Package</div>
-            <ul>
-              <li>Unlimited Edits</li>
-              <li>Lifetime Updates</li>
-              <li>24/7 Support</li>
-            </ul>
-            <div>
-              <strong>Bonus</strong>: Website Boosts Package</div>
-            <ul>
-              <li>Performance Optimizations</li>
-              <li>Optimized & Ready for SEO</li>
-            </ul>
-          </div>
+          <ul class="mt-4 text-sm flex flex-col gap-2">
+            <li>
+              <strong>Bonus:</strong>
+              <span class="text-green-500">Evergreen Package</span>
+              <ul class="text-xs">
+                <li>- Unlimited Edits</li>
+                <li>- Lifetime Updates</li>
+                <li>- 24/7 Support</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Bonus:</strong>
+              <span class="text-green-500">Website Boosts Package</span>
+              <ul class="text-xs">
+                <li>- Performance Optimizations</li>
+                <li>- Optimized & Ready for SEO</li>
+              </ul>
+            </li>
+
+          </ul>
 
           <div class="mt-auto pt-10">
             <span class="text-h3">$200</span>
@@ -379,25 +395,33 @@ eleventyNavigation:
           <p></p>
         </div>
 
-        {# ===== Silver Egg Plan ===== #}
-        <div class="p-4 bg-dark flex flex-col">
-          <h3 class="text-h3 text-lg">Standard Plan</h3>
+        {# ===== Standard Plan ===== #}
+        <div class="p-8 bg-dark text-light flex flex-col rounded-xl">
+          <h3 class="text-h3 text-2xl">Standard Plan</h3>
+          <p class="text-sm">All you need to start establishing your form and building exposure. Perfect for medium-sized firms.</p>
 
-          <div>
-            <ul>
-              <li>Everything in Basic</li>
-              <li>20 Primary Pages</li>
-            </ul>
-          </div>
+          <ul class="mt-4">
+            <li class="flex items-center gap-2">
+              <picture><img src="assets/svgs/check-light.svg" aria-hidden="true"></picture>
+              <span>Everything in Basic</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <picture><img src="assets/svgs/check-light.svg" aria-hidden="true"></picture>
+              <span>20 Primary Pages</span>
+            </li>
+          </ul>
 
-          <div class="mt-4">
-            <div>
-              <strong>Bonus</strong>: SEO Package</div>
-            <div>
-              <strong>Bonus</strong>: Content Creation Package</div>
-            <div>
-              <strong>Bonus</strong>: Social Media Package</div>
-          </div>
+          <ul class="mt-4 text-sm">
+            <li>
+              <strong>Bonus:</strong>
+              <span class="text-green-500">SEO Package</span></li>
+            <li>
+              <strong>Bonus:</strong>
+              <span class="text-green-500">Content Creation Package</span></li>
+            <li>
+              <strong>Bonus:</strong>
+              <span class="text-green-500">Social Media Package</span></li>
+          </ul>
 
           <div class="mt-auto pt-10">
             <span class="text-h3">$500</span>
@@ -406,22 +430,40 @@ eleventyNavigation:
           <p></p>
         </div>
 
-        {# ===== Golden Egg Plan ===== #}
-        <div class="p-4 bg-dark flex flex-col">
-          <h3 class="text-h3 text-lg">VIP Plan</h3>
-          <ul>
-            <li>Everything in Standard</li>
-            <li>Unlimited Primary Pages</li>
+        {# ===== VIP Plan ===== #}
+        <div class="p-8 bg-dark text-light flex flex-col rounded-xl">
+          <h3 class="text-h3 text-2xl">VIP Plan</h3>
+          <p class="text-sm">Everything in standard, but better by orders of magnitude. This is the ultimate package. Perfect for large firms.</p>
+
+          <ul class="mt-4">
+            <li class="flex items-center gap-2">
+              <picture><img src="assets/svgs/check-light.svg" aria-hidden="true"></picture>
+              <span>Everything in Standard</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <picture><img src="assets/svgs/check-light.svg" aria-hidden="true"></picture>
+              <span>
+                <strong>Unlimited</strong> Primary Pages</span>
+            </li>
           </ul>
 
-          <div class="mt-4">
-            <div>
-              <strong>Bonus</strong>: SEO Package Plus</div>
-            <div>
-              <strong>Bonus</strong>: Content Creation Package Plus</div>
-            <div>
-              <strong>Bonus</strong>: Social Media Package Plus</div>
-          </div>
+          <ul class="mt-4 text-sm">
+            <li>
+              <strong>Bonus:</strong>
+              <span class="text-green-500">SEO Package</span>
+              <strong class="text-green-300">Plus</strong>
+            </li>
+            <li>
+              <strong>Bonus:</strong>
+              <span class="text-green-500">Content Creation Package</span>
+              <strong class="text-green-300">Plus</strong>
+            </li>
+            <li>
+              <strong>Bonus:</strong>
+              <span class="text-green-500">Social Media Package</span>
+              <strong class="text-green-300">Plus</strong>
+            </li>
+          </ul>
 
           <div class="mt-auto pt-10">
             <span class="text-h3">$5000</span>

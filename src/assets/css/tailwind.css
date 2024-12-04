@@ -4,7 +4,7 @@
 
 @layer components {
   .button {
-    @apply bg-primary capitalize text-light p-4 rounded-lg block font-semibold transition-colors hover:bg-light hover:text-primary;
+    @apply bg-primary capitalize text-white p-4 rounded-lg block font-semibold transition-colors hover:bg-light hover:text-primary;
   }
 
 

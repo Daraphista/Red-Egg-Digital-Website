@@ -76,8 +76,8 @@ eleventyNavigation:
   {# ===================================================================== #}
   {#                              Hero Section                             #}
   {# ===================================================================== #}
-  <section class="px-gutter py-section-default relative text-light">
-    <div class="max-w-container-default grid lg:grid-cols-2 gap-8 mx-auto relative z-10">
+  <section class="px-gutter py-section-default text-light relative">
+    <div class="max-w-container-default lg:grid-cols-2 relative z-10 grid gap-8 mx-auto">
 
       {# Content #}
       <div class="flex flex-col gap-4">
@@ -86,16 +86,16 @@ eleventyNavigation:
         </h1>
         <p class="">We are the go-to digital marketers for small and medium-sized law firms looking to earn trust and establish authority without the hassle of overspending on advertisements. All done with superb Websites and SEO.</p>
 
-        <div class="flex flex-col gap-4 md:flex-row">
-          <div class="flex items-center gap-2 font-heading text-sm">
+        <div class="md:flex-row flex flex-col gap-4">
+          <div class="font-heading flex items-center gap-2 text-sm">
             <picture><img src="assets/svgs/check-light.svg" aria-hidden="true" loading="lazy" decoding="async"></picture>
             More Traffic
           </div>
-          <div class="flex items-center gap-2 font-heading text-sm">
+          <div class="font-heading flex items-center gap-2 text-sm">
             <picture><img src="assets/svgs/check-light.svg" aria-hidden="true" loading="lazy" decoding="async"></picture>
             Better Prospect Quality
           </div>
-          <div class="flex items-center gap-2 font-heading text-sm">
+          <div class="font-heading flex items-center gap-2 text-sm">
             <picture><img src="assets/svgs/check-light.svg" aria-hidden="true" loading="lazy" decoding="async"></picture>
             More Clients
           </div>
@@ -113,16 +113,16 @@ eleventyNavigation:
     </div>
 
     {# Background #}
-    <div class="absolute inset-0 bg-primary">
+    <div class="bg-primary absolute inset-0">
       <picture class="w-full h-full overflow-hidden">
         <source media="(min-width: 601px)" srcset="/assets/images/home/hero-background-image.webp">
-        <img class="absolute inset-0 w-full h-full object-cover" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/home/hero-background-image.webp" alt="Red Egg Digital" width="2560" height="1440">
+        <img class="absolute inset-0 object-cover w-full h-full" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/home/hero-background-image.webp" alt="Red Egg Digital" width="2560" height="1440">
       </picture>
       {# Overlay #}
-      <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-primary to-primary/85"></div>
+      <div class="bg-gradient-to-r from-primary to-primary/85 absolute inset-0 w-full h-full"></div>
     </div>
 
-    <div class="absolute bg-light inset-x-0 h-14 bottom-0 lg:hidden"></div>
+    <div class="bg-light h-14 lg:hidden absolute inset-x-0 bottom-0"></div>
   </section>
 
   {# ===================================================================== #}
@@ -131,34 +131,34 @@ eleventyNavigation:
   <section class="px-gutter py-section-default text-dark bg-light">
     <div class="max-w-container-default mx-auto">
 
-      <div class="flex flex-col gap-4 items-center text-center">
+      <div class="flex flex-col items-center gap-4 text-center">
         <h2 class="text-h2">Services</h2>
         <p>Everything you need for your law firm to thrive.</p>
       </div>
 
-      <div class="grid gap-4 mt-8 md:grid-cols-3">
-        <div class="p-4 bg-dark border rounded-xl text-light shadow-lg">
+      <div class="md:grid-cols-3 grid gap-4 mt-8">
+        <div class="bg-dark rounded-xl text-light p-4 border shadow-lg">
           <picture class="rounded-lg">
             <source media="(min-width: 601)" srcset="assets/images/home/service-website.png">
             <img class="rounded-lg" src="assets/images/home/service-website.png" aria-hidden="hidden">
           </picture>
-          <h3 class="text-h3 text-2xl mt-4">Websites</h3>
+          <h3 class="text-h3 mt-4 text-2xl">Websites</h3>
           <p>Showcase your firm and connect with your prospects with a website that is optimized for conversions. </p>
         </div>
-        <div class="p-4 bg-dark border rounded-xl text-light shadow-lg">
+        <div class="bg-dark rounded-xl text-light p-4 border shadow-lg">
           <picture class="rounded-lg">
             <source media="(min-width: 601)" srcset="assets/images/home/service-website.png">
             <img class="rounded-lg" src="assets/images/home/service-seo.png" aria-hidden="hidden">
           </picture>
-          <h3 class="text-h3 text-2xl mt-4">SEO</h3>
+          <h3 class="text-h3 mt-4 text-2xl">SEO</h3>
           <p>Rank higher on Google, build your reputation, and gain more exposure locally or nationwide. All without breaking the bank on ads.</p>
         </div>
-        <div class="p-4 bg-dark border rounded-xl text-light shadow-lg">
+        <div class="bg-dark rounded-xl text-light p-4 border shadow-lg">
           <picture class="rounded-lg">
             <source media="(min-width: 601)" srcset="assets/images/home/service-website.png">
             <img class="rounded-lg" src="assets/images/home/service-social-media.png" aria-hidden="hidden">
           </picture>
-          <h3 class="text-h3 text-2xl mt-4">Social Media</h3>
+          <h3 class="text-h3 mt-4 text-2xl">Social Media</h3>
           <p>Drive website traffic, build loyalty, and attract more clients. Amplify your marketing efforts with social media. All done for you.</p>
         </div>
       </div>
@@ -171,10 +171,10 @@ eleventyNavigation:
   {# ===================================================================== #}
 
   <section class="px-gutter py-section-default text-dark">
-    <div class="max-w-container-default mx-auto grid lg:grid-cols-2 gap-y-6 gap-x-16">
+    <div class="max-w-container-default lg:grid-cols-2 gap-y-6 gap-x-16 grid mx-auto">
 
       <div>
-        <div class="lg:sticky top-10 flex flex-col items-center font-heading text-lg">
+        <div class="lg:sticky top-10 font-heading flex flex-col items-center text-lg">
           <p>
             Made with Our Masterfully Crafted
           </p>
@@ -194,7 +194,7 @@ eleventyNavigation:
         <div class="grid gap-4">
           <div class="">
             <div class="flex items-center gap-2">
-              <div class="h-4 w-4">
+              <div class="w-4 h-4">
                 <picture><img src="assets/svgs/check-dark.svg" aria-hidden="true"></picture>
               </div>
               <h3 class="text-h3 text-lg">Website Security Guarantee</h3>
@@ -203,7 +203,7 @@ eleventyNavigation:
           </div>
           <div class="">
             <div class="flex items-center gap-2">
-              <div class="h-4 w-4">
+              <div class="w-4 h-4">
                 <picture><img src="assets/svgs/check-dark.svg" aria-hidden="true"></picture>
               </div>
               <h3 class="text-h3 text-lg">Better Designs</h3>
@@ -212,7 +212,7 @@ eleventyNavigation:
           </div>
           <div class="">
             <div class="flex items-center gap-2">
-              <div class="h-4 w-4">
+              <div class="w-4 h-4">
                 <picture><img src="assets/svgs/check-dark.svg" aria-hidden="true"></picture>
               </div>
               <h3 class="text-h3 text-lg">Perfect Performance Scores</h3>
@@ -221,7 +221,7 @@ eleventyNavigation:
           </div>
           <div class="">
             <div class="flex items-center gap-2">
-              <div class="h-4 w-4">
+              <div class="w-4 h-4">
                 <picture><img src="assets/svgs/check-dark.svg" aria-hidden="true"></picture>
               </div>
               <h3 class="text-h3 text-lg">Satisfaction Guarantee</h3>
@@ -230,7 +230,7 @@ eleventyNavigation:
           </div>
           <div class="">
             <div class="flex items-center gap-2">
-              <div class="h-4 w-4">
+              <div class="w-4 h-4">
                 <picture><img src="assets/svgs/check-dark.svg" aria-hidden="true"></picture>
               </div>
               <h3 class="text-h3 text-lg">Unmatched Support</h3>
@@ -239,7 +239,7 @@ eleventyNavigation:
           </div>
           <div class="">
             <div class="flex items-center gap-2">
-              <div class="h-4 w-4">
+              <div class="w-4 h-4">
                 <picture><img src="assets/svgs/check-dark.svg" aria-hidden="true"></picture>
               </div>
               <h3 class="text-h3 text-lg">Better SEO</h3>
@@ -257,7 +257,7 @@ eleventyNavigation:
   {# ===================================================================== #}
 
   <section class="px-gutter py-section-default bg-dark text-light">
-    <div class="max-w-container-default mx-auto grid lg:grid-cols-2 gap-y-6 gap-x-16">
+    <div class="max-w-container-default lg:grid-cols-2 gap-y-6 gap-x-16 grid mx-auto">
 
       <div class="flex flex-col gap-4">
 
@@ -272,7 +272,7 @@ eleventyNavigation:
 
       </div>
 
-      <div class="flex flex-col items-center font-heading text-lg">
+      <div class="font-heading flex flex-col items-center text-lg">
         <p>
             Our Carefully Curated
           </p>
@@ -292,7 +292,7 @@ eleventyNavigation:
   {# ===================================================================== #}
 
   <section class="px-gutter py-section-default text-dark">
-    <div class="max-w-container-default mx-auto grid lg:grid-cols-2 gap-y-6 gap-x-16">
+    <div class="max-w-container-default lg:grid-cols-2 gap-y-6 gap-x-16 grid mx-auto">
 
       <div>
         <div class="lg:sticky top-10 flex flex-col items-center">
@@ -335,9 +335,9 @@ eleventyNavigation:
   {# ===================================================================== #}
 
   <section class="px-gutter py-section-default bg-dark text-light">
-    <div class="max-w-container-default mx-auto flex flex-col gap-y-6 gap-x-16">
+    <div class="max-w-container-default gap-y-6 gap-x-16 flex flex-col mx-auto">
 
-      <div class="flex flex-col gap-4 items-center text-center">
+      <div class="flex flex-col items-center gap-4 text-center">
 
         <h2 class="text-h2">Pricing</h2>
 
@@ -367,7 +367,7 @@ eleventyNavigation:
             </li>
           </ul>
 
-          <ul class="mt-4 text-sm flex flex-col gap-2">
+          <ul class="flex flex-col gap-2 mt-4 text-sm">
             <li>
               <strong>Bonus:</strong>
               <span class="text-green-600">Evergreen Package</span>
@@ -388,7 +388,7 @@ eleventyNavigation:
 
           </ul>
 
-          <div class="mt-auto pt-10">
+          <div class="pt-10 mt-auto">
             <span class="text-h3">$200</span>
             <span>/ month</span>
           </div>
@@ -423,7 +423,7 @@ eleventyNavigation:
               <span class="text-green-600">Social Media Package</span></li>
           </ul>
 
-          <div class="mt-auto pt-10">
+          <div class="pt-10 mt-auto">
             <span class="text-h3">$500</span>
             <span>/ month</span>
           </div>
@@ -465,7 +465,7 @@ eleventyNavigation:
             </li>
           </ul>
 
-          <div class="mt-auto pt-10">
+          <div class="pt-10 mt-auto">
             <span class="text-h3">$5000</span>
             <span>/ month</span>
           </div>
@@ -483,7 +483,7 @@ eleventyNavigation:
   <section class="px-gutter py-section-default bg-primary text-light">
     <div class="max-w-container-default mx-auto">
 
-      <div class="flex flex-col gap-8 items-center text-center">
+      <div class="flex flex-col items-center gap-8 text-center">
 
         <h2 class="text-h1">Ready to take your firm to <br> the next level?</h2>
 
@@ -498,7 +498,7 @@ eleventyNavigation:
   {# ===================================================================== #}
 
   <section class="px-gutter py-section-default text-dark bg-light">
-    <div class="max-w-container-default mx-auto flex flex-col gap-y-6 gap-x-16">
+    <div class="max-w-container-default gap-y-6 gap-x-16 flex flex-col mx-auto">
 
       <div class="flex flex-col gap-8">
 
